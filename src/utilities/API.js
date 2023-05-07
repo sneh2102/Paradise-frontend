@@ -16,7 +16,7 @@ const token = () => {
 
 class API {
     constructor(route) {
-        this.serverRouteURL = process.env.REACT_APP_SERVER_BACKEND_API_URL + route;
+        this.serverRouteURL = "https://paradise-api.onrender.com" + route;
     }
 
     /** get api */
