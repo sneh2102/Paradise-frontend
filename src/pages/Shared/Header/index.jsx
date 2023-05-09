@@ -46,7 +46,7 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/">
-          <img src={logo} className="logo" />
+          <h3>Paradise</h3>
         </Link>
         <ul>
           <li>
