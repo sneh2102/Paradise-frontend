@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="/">
+        <Link to="/" style={{textDecoration: "none", color: "white"}}>
           <h3>Paradise</h3>
         </Link>
         <ul>
