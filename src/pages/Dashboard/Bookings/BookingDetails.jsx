@@ -38,11 +38,11 @@ const BookingDetails = ({ id, onClose }) => {
             <Card.Body>
                 <Form>
                     <Form.Text as={Link} to={`/plans/${data.planId}`} className="text-decoration-none text-secondary fs-6 fw-bold d-block">{data.planName}</Form.Text>
-                    <Form.Text className="d-block">Price: ${data.price}</Form.Text>
+                    <Form.Text className="d-block">Price: ₹{data.price}</Form.Text>
                     <Form.Text className="d-block">Quantity: {data.quantity}</Form.Text>
                     {data.discount && <Form.Text className="d-block">Discount: {data.discount}%</Form.Text>}
-                    <Form.Text className="d-block">Total amount: ${data.totalAmount?.toFixed(2)}</Form.Text>
-                    <Form.Text className="d-block fw-bold">Payable amount: <span className="text-success">${data.payableAmount?.toFixed(2)}</span></Form.Text>
+                    <Form.Text className="d-block">Total amount: ₹{data.totalAmount?.toFixed(2)}</Form.Text>
+                    <Form.Text className="d-block fw-bold">Payable amount: <span className="text-success">₹{data.payableAmount?.toFixed(2)}</span></Form.Text>
 
                     <Button variant="success" size="sm" className="mt-3" disabled={data.paid}>Pay</Button>{" "}
                     <Button variant="warning" size="sm" className="mt-3" disabled={data.cancelation} onClick={handleCancelation}>Cancel</Button>{" "}

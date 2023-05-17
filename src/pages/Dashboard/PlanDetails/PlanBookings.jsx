@@ -50,9 +50,9 @@ const PlanBookings = ({ planId, filter }) => {
     return (
         <>
             {isLoading ? <Loading height="60" /> :
-                <Table striped hover responsive>
+                <Table striped hover responsive >
                     <thead>
-                        <tr>
+                        <tr style={{color: "white"}}>
                             <th>#</th>
                             <th>User name</th>
                             <th>Price</th>
@@ -66,11 +66,11 @@ const PlanBookings = ({ planId, filter }) => {
                         {bookings.map((booking, index) => <tr key={booking._id} onClick={() => setShowBooking(booking._id)}>
                             <td>{index + 1 + (limit * (currentPage - 1))}</td>
                             <td>{booking.user?.name}</td>
-                            <td>${booking.price}</td>
+                            <td>₹{booking.price}</td>
                             <td>{booking.quantity}</td>
-                            <td>${booking.payableAmount?.toFixed(2)}</td>
-                            <td>${booking.discountAmount?.toFixed(2)}</td>
-                            <td>{booking.payment ? <span className="text-success">${booking.payment.amount}</span> : '-'}</td>
+                            <td>₹{booking.payableAmount?.toFixed(2)}</td>
+                            <td>₹{booking.discountAmount?.toFixed(2)}</td>
+                            <td>{booking.payment ? <span className="text-success">₹{booking.payment.amount}</span> : '-'}</td>
                         </tr>)}
                     </tbody>
                 </Table>}

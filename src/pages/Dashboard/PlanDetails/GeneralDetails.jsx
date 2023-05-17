@@ -46,7 +46,7 @@ const GeneralDetails = ({ onUpdate, ...plan }) => {
                             {[
                                 ['Name', plan.name],
                                 ['Short Description', plan.shortDescription],
-                                ['Price', `$${plan.price}`],
+                                ['Price', `₹${plan.price}`],
                                 ['Tour days', `${plan.tourDays} Days`],
                                 ['Starting date', new Date(plan.startingDate).toDateString().replace(' ', ', ')]
                             ].map((item, idx) => <tr key={idx}>
@@ -70,7 +70,7 @@ const GeneralDetails = ({ onUpdate, ...plan }) => {
                 <Form.Group className="mb-3">
                     <Form.Label>Price</Form.Label>
                     <InputGroup>
-                        <InputGroup.Text>$</InputGroup.Text>
+                        <InputGroup.Text>₹</InputGroup.Text>
                         <Form.Control type="number" defaultValue={plan.price} {...register('price', { required: true })} />
                     </InputGroup>
                 </Form.Group>

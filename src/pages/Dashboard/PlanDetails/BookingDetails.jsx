@@ -44,15 +44,15 @@ const BookingDetails = ({ id, onClose, onDelete }) => {
     };
 
     return (
-        <Card className="bg-white shadow position-fixed top-50 start-50 translate-middle" style={{ width: '20rem', maxWidth: '98%' }}>
+        <Card className="bg-white shadow position-fixed top-50 start-50 translate-middle" style={{ width: '20rem', maxWidth: '98%', color: "white" }}>
             <Card.Body>
                 <Form>
                     <Form.Text className="text-decoration-none text-secondary fs-6 fw-bold d-block">{data.user?.name}</Form.Text>
                     <Form.Text className="d-block">Quantity: {data.quantity}</Form.Text>
-                    {data.discount ? <Form.Text className="d-block">Discount: ${data.discount}</Form.Text> : null}
-                    <Form.Text className="d-block">Total amount: ${data.totalAmount?.toFixed(2)}</Form.Text>
-                    <Form.Text className="d-block fw-bold">Payable amount: <span className="text-danger">${data.payableAmount?.toFixed(2)}</span></Form.Text>
-                    {data.payment && <Form.Text className="d-block fw-bold">Paid amount: <span className="text-success">${data.payment.amount.toFixed(2)}</span></Form.Text>}
+                    {data.discount ? <Form.Text className="d-block">Discount: ₹{data.discount}</Form.Text> : null}
+                    <Form.Text className="d-block">Total amount: ₹{data.totalAmount?.toFixed(2)}</Form.Text>
+                    <Form.Text className="d-block fw-bold">Payable amount: <span className="text-danger">₹{data.payableAmount?.toFixed(2)}</span></Form.Text>
+                    {data.payment && <Form.Text className="d-block fw-bold">Paid amount: <span className="text-success">₹{data.payment.amount.toFixed(2)}</span></Form.Text>}
 
                     {data.cancelation?.requestSended && <Button variant="warning" size="sm" className="mt-3" onClick={handleApproveCancelation}>Approve Cancelation</Button>}{" "}
                     {user.role === 'admin' && <Button variant="danger" size="sm" className="mt-3" onClick={handleDeleteBooking}>Delete</Button>}{" "}

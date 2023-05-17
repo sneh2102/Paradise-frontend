@@ -73,7 +73,7 @@ const About = () => {
           </p>
 
           <a className="btn-text" href="#"  onClick={() => history.push('/plans')}>
-            Buy a Track now &rarr;
+            Buy a Trip now &rarr;
           </a>
         </div>
         <div className="col-1-of-2">

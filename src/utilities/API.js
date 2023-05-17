@@ -3,7 +3,7 @@ import axios from "axios";
 const token = () => {
     const idToken = localStorage.getItem('idToken');
     if (!idToken) {
-        // returning undefined on token not found
+
         return;
     }
 

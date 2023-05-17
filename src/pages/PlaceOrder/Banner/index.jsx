@@ -26,8 +26,11 @@ const Banner = (props) => {
                 <div className="h1">{props.name}</div>
                 <div className="h6">On {new Date(props.startingDate).toDateString()}</div>
                 <p className="text-secondary">{props.shortDescription}</p>
+                <p>{props.startingDate}</p>
+                <p>{props.tourDays} Days {props.tourDays - 1} Nights</p>
                 {props.globalDiscount ? <p>Now at ₹{props.payable.toFixed(2)}{" "}
                     <s className="text-secondary">₹{props.price}</s>{" "}
+        
                     <Badge bg="warning" text="dark">
                         -{props.globalDiscount}%
                     </Badge>

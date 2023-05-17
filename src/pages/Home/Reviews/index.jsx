@@ -28,7 +28,7 @@ const Reviews = () => {
                     <div className="story">
                         <figure className="story__shape">
                             <img src={nat8} alt="Person on a tour" className="story__image"/>
-                            <figcaption className="story__caption">Marry Smith</figcaption>
+                            <figcaption className="story__caption">Kari Scott</figcaption>
                         </figure>
                         <div className="story__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
@@ -44,7 +44,7 @@ const Reviews = () => {
                     <div className="story">
                         <figure className="story__shape">
                             <img src={nat9} alt="Person on a tour" className="story__image"/>
-                            <figcaption className="story__caption">Jack Wilson</figcaption>
+                            <figcaption className="story__caption">Soham Desai</figcaption>
                         </figure>
                         <div className="story__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">WOW! My life is completely diffrent now</h3>

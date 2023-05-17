@@ -27,14 +27,14 @@ const Book = () => {
                                         <input type="radio" className="form__radio-input" id="smallTour" name="tourSize"/>
                                         <label for="smallTour" className="form__radio-label">
                                             <span className="form__radio-button"></span>
-                                            Small tour group
+                                            Solo
                                         </label>
                                     </div>
                                     <div className="form__radio-group">
                                         <input type="radio" className="form__radio-input" id="largeTour" name="tourSize"/>
                                         <label for="largeTour" className="form__radio-label">
                                             <span className="form__radio-button"></span>
-                                            Large tour group
+                                            Group
                                         </label>
                                     </div>
                                 </div>

@@ -23,22 +23,7 @@ const Header = () => {
     e.preventDefault();
     history.push(`/plans?search=${inputRef.current.value}`);
   };
-  const inp = document.querySelector(".inp");
-  const ser = document.querySelector(".searchIcon");
-  const handleSearch = () =>{
-      inp.style.opacity="1";
-      inp.style.WebkitTransitionDelay= ".2s"; 
-        inp.style.MozTransitionDelay= ".2s"; 
-        inp.style.transitionDelay= ".2s";
-        // inp.style.WebkitTransform= "rotate(45deg)";        
-        // inp.style.MozTransform= "rotate(45deg)";        
-        // inp.style.transform= "rotate(45deg)";
-        inp.focus();  
-        inp.style.display= "inline-block"
-        ser.style.right="230px"
-        
-
-  }
+  
   
 
 
